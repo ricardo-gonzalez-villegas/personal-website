@@ -2,24 +2,20 @@ body {
   width: 100%;
   height: 100%;
   color: #333 !important;
-  font-family: 'Montserrat', sans-serif !important;
-  background-image: linear-gradient(135deg, #fdfcfb 0%, #e2d1c3 100%);
+  font-family: 'Oxygen', sans-serif;
+  background-image: linear-gradient(135deg, #fdfcfb 0%, #e2d1c3 100%) !important;
+  background-repeat: no-repeat;
 }
 
 .navbar{
-    height: 10vh;
-    width: 100%;
-    position: absolute;
     background: none !important;
 }
 
 
 .nav-link{
-    font-size: 2em;
+    font-size: 1.5em;
     color: #333;
 }
-
-
 
 .home__line--1 {
   font-size: 4em;
@@ -35,21 +31,21 @@ body {
   font-weight: 100;
 }
 
-@media (max-width: 991px) {
+@media (max-width: 768px) {
   .home__line--1 {
-    font-size: 1.2em;
-  }
-
-  .home__line--2 {
     font-size: 2em;
   }
 
+  .home__line--2 {
+    font-size: 2.6em;
+  }
+
   .home__line--3 {
-    font-size: 1em;
+    font-size: 1.5em;
   }
 }
 
-.masthead {
+.cover {
   height: 100vh;
   width: 100%;
   min-height: 500px;
@@ -57,20 +53,80 @@ body {
 }
 
 .icons--social {
-  font-size: 6em;
+  font-size: 7em;
   text-align: center;
 }
 
 .icons--social a {
-  color: #333;
+  color: #a8a39e;
 }
 
 .icons--social a:hover {
-  color: #367EA3;
+  color: #333;
 }
 
-@media (max-width: 991px) {
+@media (max-width: 768px) {
   .icons--social {
-    font-size: 3em;
+    font-size: 5em;
   }
+
+  .pad-top{
+      padding-top: 90px !important;
+  }
+}
+
+ .row-top{
+     padding-top: 40px;
+ }
+
+ .pad-bot{
+     padding-bottom: 40px;
+ }
+
+ @media (max-width: 768px) {
+     .project-title {
+         padding-top: 20px;
+     }
+
+     .project-title p{
+         font-size: 1.6em;
+     }
+
+     .project-title h1{
+         font-size: 2em;
+     }
+ }
+
+.about-img{
+    border-radius: 50%;
+}
+
+@media (max-width: 768px) {
+    .about_line {
+        font-size: 1.3em !important;
+    }
+
+    .pad-top {
+        padding-top: 50px;
+    }
+
+}
+
+@media (min-width: 1024px) {
+    .about {
+        font-size: 1.4em;
+    }
+
+    .skills{
+        font-size: 1.1em;
+    }
+}
+
+.project-title a {
+    color: rgba(0,0,0,.5);
+}
+
+.project-title a:hover{
+    color: #333;
+    text-decoration: none;
 }
